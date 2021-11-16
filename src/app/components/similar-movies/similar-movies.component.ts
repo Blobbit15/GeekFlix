@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IntMovie } from 'src/app/IntMovie';
 
 @Component({
   selector: 'app-similar-movies',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./similar-movies.component.css']
 })
 export class SimilarMoviesComponent implements OnInit {
-  @Input() film!: any;
+  @Input() film!: IntMovie;
 
   constructor() { }
 

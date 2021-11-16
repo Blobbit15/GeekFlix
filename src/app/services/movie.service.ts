@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable, observable } from "rxjs";
 import { map } from "rxjs";
+import { IntMovie } from "../IntMovie";
 
 @Injectable({
     providedIn: 'root'

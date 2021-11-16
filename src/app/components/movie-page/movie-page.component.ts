@@ -10,8 +10,8 @@ import { MovieService } from 'src/app/services/movie.service';
 })
 export class MoviePageComponent implements OnInit {
 
-  similarMovies: any = [];
-  moviesArray: any = [];
+  similarMovies: IntMovie[] = [];
+  moviesArray: IntMovie[] = [];
 
   constructor(private movie: MovieService, private route: ActivatedRoute) { }
 
