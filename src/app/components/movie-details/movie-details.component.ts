@@ -27,4 +27,9 @@ export class MovieDetailsComponent implements OnInit {
     localStorage.removeItem(JSON.stringify(this.item.id))
   }
 
+  getEmotion(): any {
+    let emotion = localStorage.getItem(this.item.id);
+    return emotion;
+  }
+
 }
