@@ -13,7 +13,6 @@ import { MovieSynopsisComponent } from './components/movie-synopsis/movie-synops
 
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
-import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzFormModule } from 'ng-zorro-antd/form';
@@ -37,7 +36,6 @@ import { MovieDetailsComponent } from './components/movie-details/movie-details.
     BrowserModule,
     NzCardModule,
     NzCheckboxModule,
-    NzIconModule,
     NzInputModule,
     HttpClientModule,
     FormsModule,
