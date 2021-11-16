@@ -4,3 +4,17 @@
   background-color: aquamarine;
   color: black;
 }
+hr {
+  background-color: #00c2ff;
+}
+.flex-container{
+  display: flex;
+}
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+}
+
+.emotion {
+  justify-content: flex-start;
+}

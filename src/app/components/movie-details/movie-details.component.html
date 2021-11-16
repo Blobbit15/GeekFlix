@@ -1,12 +1,23 @@
-<div style="background: #00c2ff;padding:30px;">
-  <nz-card style="width:400px;" [nzBordered]="false" nzTitle="{{item.title}}">
-    <img src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="{{item.title}}" style="width:300px">
-    <h4><b>Release Date: {{item.release_date}} | Rating: {{item.vote_average}}</b></h4>
-    <button nz-button nzType="primary" id="happy" value="happy" (click)="onHappyClick()">Happy</button>
-    <button nz-button nzType="primary" id="sad" value="sad" (click)="onSadClick()">Sad</button>
-    <button nz-button nzType="primary" id="neutral" value="neutral" (click)="onNeutralClick()">Neutral</button>
-    <button nz-button nzType="primary" value="delete" (click)="onClearEmotion()">Untag</button>
+<div class="flex-container">
+  <div style="background: #00c2ff;padding:30px;">
+    <nz-card style="width:360px;" [nzBordered]="false">
+      <img src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="{{item.title}}" style="width:300px">
+      <hr>
+      <button nz-button nzType="primary" id="happy" value="happy" (click)="onHappyClick()">Happy</button>
+      <button nz-button nzType="primary" id="sad" value="sad" (click)="onSadClick()">Sad</button>
+      <button nz-button nzType="primary" id="neutral" value="neutral" (click)="onNeutralClick()">Neutral</button>
+      <button nz-button nzType="primary" value="delete" (click)="onClearEmotion()">Untag</button>
+      <br>
+    </nz-card>
+  </div>
+  <div>
+    <h2><b>{{item.title}}</b></h2>
     <br>
-    {{item.overview}}
-  </nz-card>
+    <h3><b>Release Date: {{item.release_date}} | Rating: {{item.vote_average}}</b></h3>
+    <br>
+    <p style="max-width: 50%;">{{item.overview}}</p>
+  </div>
+  <div class="emotion">
+    <p>Happy</p>
+  </div>
 </div>

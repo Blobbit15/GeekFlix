@@ -1,5 +1,5 @@
 <div style="background: #00c2ff;padding:30px;">
-  <nz-card style="width:300px;" [nzBordered]="false" nzTitle="{{film.title}}">
+  <nz-card style="width:300px;" [nzBordered]="false" nzTitle="{{film.title | uppercase}}">
     <img src="https://image.tmdb.org/t/p/w500/{{film.poster_path}}" alt="{{film.title}}" style="width:200px"><br><br>
     {{(film.overview | slice:0:160)+'...'}}
   </nz-card>

@@ -1,4 +1,4 @@
-<div style="background: #00c2ff;padding:30px;">
+<div  id="card" style="background: #00c2ff;padding:30px;">
   <a [routerLink]="['/movie', item.id]">
     <nz-card style="width:300px;" [nzBordered]="false" nzTitle="{{item.title | uppercase}}" [nzHoverable]="true">
       <img src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="{{item.title}}" style="width:200px"><br><br>
