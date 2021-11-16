@@ -1,0 +1,11 @@
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size:xx-large;
+  font-style: oblique;
+}
+.heading {
+  background-color: aquamarine;
+  box-sizing: content-box;
+}
+

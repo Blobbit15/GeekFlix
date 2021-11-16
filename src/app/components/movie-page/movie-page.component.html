@@ -1,0 +1,4 @@
+<app-movie-details *ngFor="let item of moviesArray" [item]="item"></app-movie-details>
+<div class="grid-container">
+  <app-similar-movies *ngFor="let film of similarMovies | slice:0:6;" [film]="film"></app-similar-movies>
+</div>

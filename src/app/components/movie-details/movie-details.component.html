@@ -1,0 +1,12 @@
+<div style="background: #00c2ff;padding:30px;">
+  <nz-card style="width:400px;" [nzBordered]="false" nzTitle="{{item.title}}">
+    <img src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt="{{item.title}}" style="width:300px">
+    <h4><b>Release Date: {{item.release_date}} | Rating: {{item.vote_average}}</b></h4>
+    <button nz-button nzType="primary" id="happy" value="happy" (click)="onHappyClick()">Happy</button>
+    <button nz-button nzType="primary" id="sad" value="sad" (click)="onSadClick()">Sad</button>
+    <button nz-button nzType="primary" id="neutral" value="neutral" (click)="onNeutralClick()">Neutral</button>
+    <button nz-button nzType="primary" value="delete" (click)="onClearEmotion()">Untag</button>
+    <br>
+    {{item.overview}}
+  </nz-card>
+</div>

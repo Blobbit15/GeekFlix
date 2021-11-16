@@ -1,0 +1,21 @@
+import { Component, Input, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-movie-synopsis',
+  templateUrl: './movie-synopsis.component.html',
+  styleUrls: ['./movie-synopsis.component.css']
+})
+export class MovieSynopsisComponent implements OnInit {
+  @Input() item!: any;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  onDeleteMovie(): void {
+    localStorage.setItem("Deleted"+[this.item.id], this.item.id)
+    location.reload();
+  }
+
+}

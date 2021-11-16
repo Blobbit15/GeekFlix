@@ -1,0 +1,13 @@
+<div class="checkbox">
+  <label nz-checkbox [(ngModel)]="checkedHappy" (ngModelChange)="onHappy()">Happy</label>
+  <label nz-checkbox [(ngModel)]="checkedSad" (ngModelChange)="onSad()">Sad</label>
+  <label nz-checkbox [(ngModel)]="checkedNeutral" (ngModelChange)="onNeutral()">Neutral</label>
+  <label nz-checkbox [(ngModel)]="checkedClear" (ngModelChange)="onClear()">Untagged</label>
+  <button class="restore" (click)="onRestoreMovies()">Restore Movies</button>
+</div>
+<div class="grid-container">
+  <app-movie-synopsis
+    *ngFor="let item of ((checkedHappy || checkedSad || checkedNeutral || checkedClear) ? filteredArray : movies)"
+    [item]="item">
+  </app-movie-synopsis>
+</div>
